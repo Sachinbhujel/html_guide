@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Techbar/>
         {children}
-        
+        <Footer />
       </body>
     </html>
   );
