@@ -3,29 +3,33 @@
 export default function Home() {
     const tutorials = [
         { title: "Learn HTML", color: "bg-orange-400", link: "/html" },
-        { title: "Learn CSS", color: "bg-blue-500", link: "/css" },
+        { title: "Learn CSS", color: "bg-green-400", link: "/css" },
         { title: "Learn JavaScript", color: "bg-yellow-400", link: "/js" },
-        { title: "Learn Python", color: "bg-green-500", link: "/python" },
-        { title: "Learn SQL", color: "bg-indigo-500", link: "/sql" },
-        { title: "Learn React", color: "bg-cyan-500", link: "/react" },
+        { title: "Learn React", color: "bg-blue-400", link: "/python" },
+        { title: "Learn Node", color: "bg-lime-400", link: "/sql" },
+        { title: "Learn Next.js", color: "bg-violet-400", link: "/react" },
+        { title: "Learn Tailwind", color: "bg-cyan-400", link: "/tailwind" },
     ];
     return (
         <>
-            <div className="min-h-screen  flex flex-col items-center px-4 py-20 bg-black">
+            <div className="min-h-screen  flex flex-col items-center px-4 py-20">
                 {/* Search Section */}
                 <section className="w-full max-w-3xl flex flex-col items-center mb-20">
-                    <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">
+                    <h2 className="text-4xl font-bold mb-6 text-center">
                         Learn to Code — For Free
                     </h2>
-                    <p className="text-gray-600 text-center max-w-xl mb-7">
+                    <p className="text-gray-700 text-center max-w-xl mb-7">
                         Explore tutorials, references, and examples to master
                         web development and programming languages.
                     </p>
                     <input
                         type="search"
                         placeholder="Search tutorials, references, and examples"
-                        className="w-full px-6 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                        className="w-full px-3 py-3 rounded border border-gray-700  placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
+                    <span className="text-lg text-center underline font-medium mt-4 text-blue-500">
+                        Not Sure Where To Begin?
+                    </span>
                 </section>
 
                 {/* Tutorials Grid */}

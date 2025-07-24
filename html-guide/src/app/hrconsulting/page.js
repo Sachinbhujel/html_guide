@@ -10,7 +10,7 @@ export default function page() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        What Our <span className="text-blue-600">Clients Say</span>
+        <span className="text-rose-600">HR</span> Consulting
       </motion.h2>
 
       <motion.p
@@ -19,8 +19,8 @@ export default function page() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        We value the feedback from our clients and strive to provide the best services.
-        Here are some testimonials from people who have worked with us.
+        Our HR Consulting services have helped individuals and businesses build stronger teams,
+        streamline recruitment, and improve workplace culture. Here is what our clients say about it.
       </motion.p>
 
       <motion.div
@@ -29,21 +29,20 @@ export default function page() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
-        {/* Example Review 1 */}
+        {/* Review 1 */}
         <div className="bg-gray-50 rounded-lg p-6 shadow-md">
           <p className="text-gray-700 text-base sm:text-lg md:text-lg mb-4">
-            HTml Guide helped me understand web development concepts clearly. The 1-on-1 coaching
-            might be unavailable now, but their free tutorials are fantastic!
+            Their HR sessions helped our startup build a healthy hiring process. We learned how to recruit smarter and retain talent better!
           </p>
-          <p className="text-gray-900 font-semibold">— Sarah Johnson</p>
+          <p className="text-gray-900 font-semibold">— Manish Thapa</p>
         </div>
 
-        {/* Example Review 2 */}
+        {/* Review 2 */}
         <div className="bg-gray-50 rounded-lg p-6 shadow-md">
           <p className="text-gray-700 text-base sm:text-lg md:text-lg mb-4">
-            Great platform for learning at your own pace. The interactive examples are especially helpful.
+            I never realized how valuable HR consulting could be until I applied their advice. It made our remote team feel more connected and valued.
           </p>
-          <p className="text-gray-900 font-semibold">— Michael Lee</p>
+          <p className="text-gray-900 font-semibold">— Sneha Koirala</p>
         </div>
       </motion.div>
     </div>

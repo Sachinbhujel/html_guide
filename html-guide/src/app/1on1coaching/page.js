@@ -1,11 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 
-export default function CoachingPage() {
+export default function page() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white px-6 py-20 text-center">
+    <div className="min-h-screen flex flex-col items-center bg-white px-6 py-10 text-center">
       <motion.h2
-        className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-6"
+        className="text-4xl font-bold text-gray-800 mb-6"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -14,7 +14,7 @@ export default function CoachingPage() {
       </motion.h2>
 
       <motion.p
-        className="max-w-xl text-base sm:text-lg md:text-xl text-gray-600 mb-8"
+        className="max-w-xl text-lg text-gray-600 mb-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
@@ -24,7 +24,7 @@ export default function CoachingPage() {
       </motion.p>
 
       <motion.p
-        className="max-w-xl text-base sm:text-lg md:text-xl text-gray-600 mb-12"
+        className="max-w-xl text-lg text-gray-600 mb-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}

@@ -10,7 +10,7 @@ export default function page() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        What Our <span className="text-blue-600">Clients Say</span>
+        <span className="text-blue-600">Accounts</span> Review
       </motion.h2>
 
       <motion.p
@@ -19,8 +19,8 @@ export default function page() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        We value the feedback from our clients and strive to provide the best services.
-        Here are some testimonials from people who have worked with us.
+        We’ve supported many individuals in understanding and managing their financial records.
+        Here’s what some of them have to say about our accounts assistance services.
       </motion.p>
 
       <motion.div
@@ -32,18 +32,17 @@ export default function page() {
         {/* Example Review 1 */}
         <div className="bg-gray-50 rounded-lg p-6 shadow-md">
           <p className="text-gray-700 text-base sm:text-lg md:text-lg mb-4">
-            HTml Guide helped me understand web development concepts clearly. The 1-on-1 coaching
-            might be unavailable now, but their free tutorials are fantastic!
+            Their accounting tutorials made it easier for me to manage my freelance finances. Highly recommend it to students and self-learners!
           </p>
-          <p className="text-gray-900 font-semibold">— Sarah Johnson</p>
+          <p className="text-gray-900 font-semibold">— Priya Sharma</p>
         </div>
 
         {/* Example Review 2 */}
         <div className="bg-gray-50 rounded-lg p-6 shadow-md">
           <p className="text-gray-700 text-base sm:text-lg md:text-lg mb-4">
-            Great platform for learning at your own pace. The interactive examples are especially helpful.
+            I struggled with bookkeeping until I followed their step-by-step resources. Easy to follow and practical!
           </p>
-          <p className="text-gray-900 font-semibold">— Michael Lee</p>
+          <p className="text-gray-900 font-semibold">— Raj Verma</p>
         </div>
       </motion.div>
     </div>

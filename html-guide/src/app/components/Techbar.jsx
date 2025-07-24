@@ -1,37 +1,72 @@
-'use client'
-import { useRef } from 'react'
-import Link from 'next/link'
+"use client";
+import { useRef } from "react";
+import Link from "next/link";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "../globals.css";
 
 export default function ScrollNav() {
-  const scrollRef = useRef(null)
+    const scrollRef = useRef(null);
 
-  const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -100, behavior: 'smooth' })
-  }
+    const scrollLeft = () => {
+        scrollRef.current.scrollBy({ left: -100, behavior: "smooth" });
+    };
 
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 100, behavior: 'smooth' })
-  }
+    const scrollRight = () => {
+        scrollRef.current.scrollBy({ left: 100, behavior: "smooth" });
+    };
 
-  return (
-    <div className="bg-gray-500 flex items-center gap-2 px-4 py-3">
-      <button onClick={scrollLeft} className="text-white font-bold">&lt;</button>
-      
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide"
-      >
-        <Link href="/html" className="text-orange-500 font-semibold hover:underline">HTML</Link>
-        <Link href="/css" className="text-green-600 font-semibold hover:underline">CSS</Link>
-        <Link href="/js" className="text-yellow-500 font-semibold hover:underline">JavaScript</Link>
-        <Link href="/react" className="text-blue-500 font-semibold hover:underline">React</Link>
-        <Link href="/node" className="text-lime-500 font-semibold hover:underline">Node</Link>
-        <Link href="/next" className="text-violet-500 font-semibold hover:underline">Next.js</Link>
-        <Link href="/tailwind" className="text-cyan-400 font-semibold hover:underline">Tailwind</Link>
-        {/* Add more if you want */}
-      </div>
+    return (
+        <div className="relative bg-gradient-to-r from-gray-700 to-gray-900 py-4 pl-6 pr-6 shadow-md overflow-hidden h-14 sticky top-[52px]">
+            <div
+                ref={scrollRef}
+                className="flex gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide scroll-smooth px-6"
+            >
+                {[
+                    { href: "/html", label: "HTML", color: "text-orange-400" },
+                    { href: "/css", label: "CSS", color: "text-green-400" },
+                    {
+                        href: "/js",
+                        label: "JavaScript",
+                        color: "text-yellow-400",
+                    },
+                    { href: "/react", label: "React", color: "text-blue-400" },
+                    { href: "/node", label: "Node", color: "text-lime-400" },
+                    {
+                        href: "/next",
+                        label: "Next.js",
+                        color: "text-violet-400",
+                    },
+                    {
+                        href: "/tailwind",
+                        label: "Tailwind",
+                        color: "text-cyan-400",
+                    },
+                ].map(({ href, label, color }) => (
+                    <Link
+                        key={href}
+                        href={href}
+                        className={`font-semibold hover:underline hover:text-white transition-all duration-200 ${color}`}
+                    >
+                        {label}
+                    </Link>
+                ))}
+            </div>
 
-      <button onClick={scrollRight} className="text-white font-bold">&gt;</button>
-    </div>
-  )
+            {/* Left Button */}
+            <button
+                onClick={scrollLeft}
+                className="absolute left-0 top-0 text-white p-1 h-14.5"
+            >
+                <FaChevronLeft />
+            </button>
+
+            {/* Right Button */}
+            <button
+                onClick={scrollRight}
+                className="absolute right-0 top-0 text-white p-1 h-14.5"
+            >
+                <FaChevronRight />
+            </button>
+        </div>
+    );
 }

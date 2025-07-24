@@ -10,13 +10,13 @@ const fadeInUp = {
 export default function page() {
   return (
     <motion.div
-      className="min-h-screen px-6 py-20 max-w-4xl mx-auto"
+      className="min-h-screen px-6 py-9 max-w-4xl mx-auto"
       initial="hidden"
       animate="visible"
       variants={fadeInUp}
     >
       <motion.h1
-        className="text-4xl font-bold text-gray-800 mb-8"
+        className="text-3xl font-bold text-gray-800 mb-6"
         variants={fadeInUp}
         initial="hidden"
         animate="visible"
