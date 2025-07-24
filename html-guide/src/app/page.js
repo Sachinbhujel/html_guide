@@ -11,7 +11,7 @@ export default function Home() {
     ];
     return (
         <>
-            <div className="min-h-screen bg-gray-50 flex flex-col items-center px-4 py-20">
+            <div className="min-h-screen  flex flex-col items-center px-4 py-20 bg-black">
                 {/* Search Section */}
                 <section className="w-full max-w-3xl flex flex-col items-center mb-20">
                     <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">

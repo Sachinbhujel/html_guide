@@ -1,7 +1,8 @@
 'use client';
+
 import { motion } from 'framer-motion';
 
-export default function Page() {
+export default function page() {
   return (
     <div className="min-h-screen bg-white px-4 py-10 md:px-20">
       <motion.h2
