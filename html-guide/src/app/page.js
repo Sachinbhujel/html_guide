@@ -25,7 +25,7 @@ export default function Home() {
                     <input
                         type="search"
                         placeholder="Search tutorials, references, and examples"
-                        className="w-full px-3 py-3 rounded border border-gray-700  placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-3 py-3 rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <span className="text-lg text-center underline font-medium mt-4 text-blue-500">
                         Not Sure Where To Begin?
